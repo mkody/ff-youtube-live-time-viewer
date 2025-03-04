@@ -14,7 +14,12 @@
 
 ## Installation
 
-TODO
+From the Firefox Add-ons site: https://addons.mozilla.org/en-US/firefox/addon/time-viewer-for-youtube-live/
+
+Manually:
+- Build a copy of this extension or download the latest `.zip` [from the releases](https://github.com/mkody/ff-youtube-live-time-viewer/releases/latest)
+- Open `about:debugging` and switch to "This Firefox"
+- Click on the `Load Temporary Add-on` and select the zip file
 
 ## Development
 
