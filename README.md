@@ -1,8 +1,6 @@
-# Time Viewer for YouTube Live
+# Time Viewer for YouTube Live (forked for Firefox)
 
-[![Create Release](https://github.com/fiahfy/youtube-live-time-viewer/actions/workflows/create-release.yml/badge.svg)](https://github.com/fiahfy/youtube-live-time-viewer/actions/workflows/create-release.yml)
-
-> Chrome Extension for Viewing Time on YouTube Live.
+> Firefox Extension for Viewing Time on YouTube Live.
 
 ## Features
 
@@ -16,10 +14,7 @@
 
 ## Installation
 
-1. Download `extension.zip` from [releases page](https://github.com/fiahfy/youtube-live-time-viewer/releases) and unzip this file.
-2. Open the Extension Management page by navigating to `chrome://extensions`.
-3. Enable Developer Mode by clicking the toggle switch next to **Developer mode**.
-4. Click the **LOAD UNPACKED** button and select the unpacked directory named `dist`.
+TODO
 
 ## Development
 
@@ -29,4 +24,14 @@ yarn
 
 # watch files changed and reload extension
 yarn dev
+```
+
+## Build
+
+```bash
+# build the extension
+yarn build
+
+# package for distribution
+yarn package
 ```

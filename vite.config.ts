@@ -14,8 +14,7 @@ const manifest = defineManifest({
     128: 'icon.png',
   },
   background: {
-    service_worker: 'src/background.ts',
-    type: 'module',
+    scripts: ['src/background.ts'],
   },
   content_scripts: [
     {
@@ -30,6 +29,13 @@ const manifest = defineManifest({
   ],
   permissions: ['storage'],
   host_permissions: ['https://www.youtube.com/*'],
+  // @ts-ignore
+  browser_specific_settings: {
+    gecko: {
+      id: 'ff-youtube-live-time-viewer@kdy.ch',
+      strict_min_version: '115.0',
+    },
+  },
 })
 
 export default defineConfig({

@@ -1061,6 +1061,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ff-youtube-live-time-viewer@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "ff-youtube-live-time-viewer@workspace:."
+  dependencies:
+    "@biomejs/biome": "npm:^1.9.4"
+    "@crxjs/vite-plugin": "npm:^2.0.0-beta.26"
+    "@fiahfy/biome-config": "npm:^0.0.1"
+    "@fiahfy/semaphore": "npm:^0.0.2"
+    "@tsconfig/vite-react": "npm:^3.4.0"
+    "@types/chrome": "npm:^0.0.307"
+    date-fns: "npm:^4.1.0"
+    husky: "npm:^9.1.7"
+    typescript: "npm:^5.8.2"
+    vite: "npm:^6.2.0"
+    vite-tsconfig-paths: "npm:^5.1.4"
+  languageName: unknown
+  linkType: soft
+
 "fill-range@npm:^7.1.1":
   version: 7.1.1
   resolution: "fill-range@npm:7.1.1"
@@ -2174,21 +2192,3 @@ __metadata:
   checksum: 10c0/a499c81ce6d4a1d260d4ea0f6d49ab4da09681e32c3f0472dee16667ed69d01dae63a3b81745a24bd78476ec4fcf856114cb4896ace738e01da34b2c42235416
   languageName: node
   linkType: hard
-
-"youtube-live-time-viewer@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "youtube-live-time-viewer@workspace:."
-  dependencies:
-    "@biomejs/biome": "npm:^1.9.4"
-    "@crxjs/vite-plugin": "npm:^2.0.0-beta.26"
-    "@fiahfy/biome-config": "npm:^0.0.1"
-    "@fiahfy/semaphore": "npm:^0.0.2"
-    "@tsconfig/vite-react": "npm:^3.4.0"
-    "@types/chrome": "npm:^0.0.307"
-    date-fns: "npm:^4.1.0"
-    husky: "npm:^9.1.7"
-    typescript: "npm:^5.8.2"
-    vite: "npm:^6.2.0"
-    vite-tsconfig-paths: "npm:^5.1.4"
-  languageName: unknown
-  linkType: soft

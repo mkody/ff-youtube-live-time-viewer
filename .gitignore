@@ -131,3 +131,6 @@ dist
 
 # Chrome Extension
 extension.zip
+
+# Firefox Extension
+web-ext-artifacts/

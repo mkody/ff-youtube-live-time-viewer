@@ -1,6 +1,6 @@
 {
-  "name": "youtube-live-time-viewer",
-  "description": "Chrome Extension for Viewing Time on YouTube Live.",
+  "name": "ff-youtube-live-time-viewer",
+  "description": "Firefox Extension for Viewing Time on YouTube Live.",
   "version": "0.0.7",
   "dependencies": {
     "@fiahfy/semaphore": "^0.0.2",
@@ -24,7 +24,7 @@
     "build": "tsc && vite build",
     "dev": "vite",
     "lint": "biome check",
-    "package": "zip -r extension.zip dist",
+    "package": "web-ext build --overwrite-dest -s dist",
     "prepare": "husky",
     "test": "yarn lint && yarn type-check",
     "type-check": "tsc"
