@@ -27,7 +27,11 @@ Manually:
 # install dependencies
 yarn
 
-# watch files changed and reload extension
+# build the extension
+# (note: `yarn dev` currently doesn't watch for source file changes and rebuild, so run this again in the background to see them applied)
+yarn build
+
+# run the build in a temporary Firefox
 yarn dev
 ```
 

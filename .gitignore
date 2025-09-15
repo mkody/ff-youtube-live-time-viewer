@@ -129,8 +129,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# Chrome Extension
-extension.zip
-
 # Firefox Extension
 web-ext-artifacts/

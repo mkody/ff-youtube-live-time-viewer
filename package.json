@@ -1,28 +1,29 @@
 {
   "name": "ff-youtube-live-time-viewer",
   "description": "Firefox Extension for Viewing Time on YouTube Live.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "dependencies": {
     "@fiahfy/semaphore": "^0.0.2",
     "date-fns": "^4.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@crxjs/vite-plugin": "^2.0.0-beta.26",
-    "@fiahfy/biome-config": "^0.0.1",
-    "@tsconfig/vite-react": "^3.4.0",
-    "@types/chrome": "^0.0.307",
+    "@biomejs/biome": "^2.2.4",
+    "@crxjs/vite-plugin": "^2.2.0",
+    "@fiahfy/biome-config": "^0.0.2",
+    "@tsconfig/vite-react": "^7.0.1",
+    "@types/chrome": "^0.1.11",
     "husky": "^9.1.7",
-    "typescript": "^5.8.2",
-    "vite": "^6.2.0",
-    "vite-tsconfig-paths": "^5.1.4"
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "web-ext": "^8.9.0"
   },
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "yarn@4.9.4",
   "private": true,
   "productName": "Time Viewer for YouTube Live",
   "scripts": {
     "build": "tsc && vite build",
-    "dev": "vite",
+    "dev": "web-ext run -s dist",
     "lint": "biome check",
     "package": "web-ext build --overwrite-dest -s dist",
     "prepare": "husky",

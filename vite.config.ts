@@ -40,5 +40,9 @@ const manifest = defineManifest({
 
 export default defineConfig({
   plugins: [crx({ manifest }), tsconfigPaths()],
-  server: { port: 9012, hmr: { port: 9012 } },
+  server: {
+    cors: {
+      origin: [/chrome-extension:\/\//],
+    },
+  },
 })
