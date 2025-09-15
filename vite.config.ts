@@ -15,6 +15,7 @@ const manifest = defineManifest({
   },
   background: {
     scripts: ['src/background.ts'],
+    type: 'module',
   },
   content_scripts: [
     {
@@ -27,9 +28,15 @@ const manifest = defineManifest({
       js: ['src/content-script-frame.ts'],
     },
   ],
+  action: {
+    default_icon: {
+      128: 'icon.png',
+    },
+    default_popup: 'src/popup.html',
+  },
   permissions: ['storage'],
   host_permissions: ['https://www.youtube.com/*'],
-  // @ts-ignore
+  // @ts-expect-error
   browser_specific_settings: {
     gecko: {
       id: 'ff-youtube-live-time-viewer@kdy.ch',
