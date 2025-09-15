@@ -65,7 +65,7 @@ const Popup = () => {
       <CssBaseline />
       <GlobalStyles
         styles={{
-          html: { overflowY: 'hidden', width: 220 },
+          html: { overflowY: 'hidden' },
         }}
       />
       <App />
