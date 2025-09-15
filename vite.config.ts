@@ -41,6 +41,9 @@ const manifest = defineManifest({
     gecko: {
       id: 'ff-youtube-live-time-viewer@kdy.ch',
       strict_min_version: '115.0',
+      data_collection_permissions: {
+        required: ['none'],
+      },
     },
   },
 })
